@@ -1,3 +1,5 @@
+#!/bin/bash
+
 file=$1
 awk '/Empirical Formula/{natom=$(NF-1)}
 /ORIENTATION OF MOLECULE IN FORCE CALCULATION/{getline;getline;getline;
